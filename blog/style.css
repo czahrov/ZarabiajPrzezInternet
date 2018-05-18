@@ -1,0 +1,334 @@
+/*
+Theme Name: Zarabiaj przez Internet
+Theme URI: #
+Zarabiaj przez Internet
+Author: Scepter.pl
+Author URI: http://www.scepter.pl
+Description: Blog o zarabianiu przez Internet
+Version: 4.7.5
+*/
+
+
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  line-height: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+}
+a, a * {
+  cursor: pointer;
+}
+
+img {
+  display: inline-block;
+}
+
+.grid {
+  width: 100%;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.regular {
+  font-family: open-sans-regular;
+}
+
+.bold {
+  font-family: open-sans-bold;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bgimg.cover {
+  background-size: cover;
+}
+.bgimg.contain {
+  background-size: contain;
+}
+
+#logo {
+  width: 250px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(images/logo_site.png);
+  background-size: contain;
+  background-color: transparent;
+}
+#logo::after {
+  content: '';
+}
+
+footer .row li {
+  margin-bottom: 40px;
+}
+
+/* =============== ANIMACJE =============== */
+@-webkit-keyframes home_arrow {
+  from {
+    margin-top: 0px;
+  }
+  to {
+    margin-top: 50px;
+  }
+}
+@keyframes home_arrow {
+  from {
+    margin-top: 0px;
+  }
+  to {
+    margin-top: 50px;
+  }
+}
+/* =============== STRONA GŁÓWNA =============== */
+#home #splash {
+  position: relative;
+  min-height: 800px;
+  margin-top: 80px;
+  overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  #home #splash {
+    min-height: 570px;
+  }
+}
+#home #splash .img {
+  position: absolute;
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  #home #splash .img {
+    display: block;
+  }
+}
+#home #splash .img.person {
+  right: 0;
+  bottom: 10px;
+}
+#home #splash .box {
+  padding: 0 20px;
+}
+@media screen and (min-width: 450px) {
+  #home #splash .box {
+    top: 42%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+@media screen and (min-width: 1280px) {
+  #home #splash .box {
+    padding: 0 280px;
+  }
+}
+#home #splash .box > .img.left_top {
+  top: 100px;
+  right: 100%;
+  -webkit-transform: translateX(280px);
+          transform: translateX(280px);
+}
+#home #splash .box > .img.right {
+  top: 0;
+  left: 100%;
+  -webkit-transform: translateX(-280px);
+          transform: translateX(-280px);
+}
+#home #splash .box > .line {
+  padding: 30px 0;
+  text-align: center;
+}
+#home #splash .box > .line.top {
+  font-size: 24px;
+}
+#home #splash .box > .line.mid {
+  font-size: 37px;
+}
+#home #splash .box > .line.mid2 {
+  font-size: 23px;
+  line-height: 40px;
+}
+#home #splash .box > .line.mid3 > a {
+  position: relative;
+}
+#home #splash .box > .line.mid3 > a > .img.left {
+  top: 100%;
+  right: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+#home #splash .box > .line.mid3 > a > .img.up {
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  animation: home_arrow 1s ease 0s infinite alternate;
+  -webkit-animation: home_arrow 1s ease 0s infinite alternate;
+  -moz-animation: home_arrow 1s ease 0s infinite alternate;
+  -o-animation: home_arrow 1s ease 0s infinite alternate;
+}
+#home .info2 {
+  padding: 50px 0;
+  height: initial;
+  min-height: 500px;
+}
+#home .info2 .btn {
+  margin: 10px 10px 10px 0;
+}
+#home .finance_item a {
+  display: block;
+}
+#home .container.finanse > div > .btn {
+  margin-top: 50px;
+}
+#home .book-description > div > .btn {
+  margin: 50px 0 0;
+}
+
+/* =============== BLOG =============== */
+#blog > .header-blog {
+  background-image: url(https://placeimg.com/500/500/tech);
+}
+#blog .big-post > .img {
+  width: 100%;
+  padding-top: 32%;
+  background-image: url(https://placeimg.com/940/300/tech);
+}
+#blog .post-promo {
+  padding-top: 50px;
+}
+#blog .post-promo > .corner-label {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+#blog .blog-post a {
+  display: block;
+}
+
+/* =============== SINGLE =============== */
+#single > .header-blog {
+  background-image: url(https://placeimg.com/940/300/tech);
+}
+
+/* =============== METODY =============== */
+#metody .position {
+  font-size: 30px;
+}
+#metody .position::after {
+  content: ".";
+}
+
+
+h1.title_pop{
+  font-size: 24px;
+  font-family: open-sans-bold;
+}
+
+p.title_cap{
+  margin:5% 0% 5% 0%;
+line-height: 30px;
+  font-size: 18px;
+    font-family: open-sans-regular;
+    padding-left: 20%;
+    padding-right: 20%;
+
+}
+
+
+.form_reg{
+  margin-bottom: 5%;
+}
+
+input.form_er{
+      color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    padding: 20px 20px 15px 20px;
+    background-color:#fff;
+    border:1px solid #122e5e;
+    white-space: initial;
+    color: #070d35;
+    min-width: 45%;
+    position: relative;
+    left: 81px;
+    min-width: 53%;
+}
+
+button.form_send{
+  position: relative;
+      color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    padding: 20px 20px 15px 20px;
+    background-color:#122e5e;
+    border:1px solid #122e5e;
+    white-space: initial;
+    color: #fff;
+      position: relative;
+       left: -70px;
+
+}
+
+button.form_send:hover{
+ 
+background-color:#091f45 ;
+transition: 0.6s;
+}
+
+button.form_send a{
+
+      color: #fff;
+    text-transform: uppercase;
+    font-size: 19px;
+    text-decoration: none;
+    font-family: open-sans-bold;
+}
+
+h2.form_info{
+  margin-top: 5%;
+  color:#122e5e;
+  font-size: 15px;    
+  font-family: open-sans-regular;
+
+}
+
+h2.form_info span{
+  font-size: 28px;    
+  font-family: open-sans-bold;
+
+}
+
+img.human_rekt{
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 14%;
+}

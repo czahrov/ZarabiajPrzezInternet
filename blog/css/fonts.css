@@ -1,0 +1,30 @@
+@font-face{
+	font-family: biko_bold;
+	src: url(../fonts/Biko_Bold.woff);
+	
+}
+
+@font-face{
+	font-family: biko_regular;
+	src: url(../fonts/Biko_Regular.woff);
+	
+}
+
+@font-face{
+	font-family: open-sans-regular;
+	src: url(../fonts/OpenSans-Regular.ttf);
+	
+}
+
+@font-face{
+	font-family: open-sans-light;
+	src: url(../fonts/OpenSans-Light.ttf);
+	
+}
+
+@font-face{
+	font-family: open-sans-bold;
+	src: url(../fonts/OpenSans-Bold.ttf);
+	
+}
+
